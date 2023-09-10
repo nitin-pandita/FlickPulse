@@ -8,43 +8,96 @@ import {
 } from "react-icons/ai";
 const Nav = () => {
   return (
-    <div className="w-[80%] m-auto  h-30 smh-10 ">
-      <div className="flex flex-col sm:flex-row justify-between  items-center w-full m-auto  sm:h-10  ">
-        <img
-          src={Logo}
-          alt="Logo"
-          className="ex:w-[60%] w-[20%] sm:w-[10%]  lg:w-[14%] sm:h-20 object-contain"
-        />
-        <ul className="text-white  w-[80%]  flex ex:flex-wrap  justify-center items-center p-4 ex:w-full">
-          <li className="text-[10px] ex:p-2 mx-3">HOME</li>
-          <li className="text-[10px] ex:p-2  mx-3">ABOUT</li>
-          <li className="text-[10px] ex:p-2  mx-3">PROJECTS</li>
-          <li className="text-[10px] ex:p-2  mx-3">NEWS</li>
-          <li className="text-[10px] mx-3">MERCHANDISE</li>
-          <li className="text-[10px] ex:p-2  mx-3">CONTACT</li>
-        </ul>
-        <div
+    <div
+      className="
+        flex
+        break:flex-col
+        break:h-[40vh]
+        break:w-full
+        justify-between
+        items-center
+        h-[10vh]
+      "
+    >
+      <div className="w-[20%] break:w-[30%] ">
+        <img src={Logo} alt="" />
+      </div>
+      <div>
+        <ul
           className="
+          flex
+          justify-center
+          items-center
+          text-center
+          text-white
+          wrapBreak:flex-wrap
+        "
+        >
+          <li className="text-[18px] mx-5 font-Mont">Home</li>
+          <li className="text-[18px] mx-5 font-Mont">Work</li>
+          <li className="text-[18px] mx-5 font-Mont">Top</li>
+          <li className="text-[18px] mx-5 font-Mont">Trending</li>
+          <li className="text-[18px] mx-5 font-Mont">Hit</li>
+        </ul>
+      </div>
+      <div
+        className="
             flex
             justify-center
             items-center
-            sm:pr-5
             text-center
+
+
   
         "
+      >
+        <a
+          href=""
+          className="
+            text-white
+            hover:text-primary            
+            transition 
+            duration-300
+            ease-in-out
+            transform 
+            hover:-translate-y-1
+            hover:scale-110 "
         >
-          <a href="" className="text-white hover:text-primary ">
-            <AiFillTwitterCircle size="23px" />
-          </a>
+          <AiFillTwitterCircle size="33px" />
+        </a>
 
-          <a href="" className=" text-white hover:text-primary mx-3">
-            <AiFillGoogleCircle size="23px" />
-          </a>
-          <a href="" className=" text-white hover:text-primary">
-            <AiFillYoutube size="23px" />
-          </a>
-        </div>
+        <a
+          href=""
+          className="             
+            text-white
+            mx-4
+            hover:text-primary            
+            transition 
+            duration-300
+            ease-in-out
+            transform 
+            hover:-translate-y-1
+            hover:scale-110"
+        >
+          <AiFillGoogleCircle size="33px" />
+        </a>
+        <a
+          href=""
+          className="            
+            text-white
+
+            hover:text-primary            
+            transition 
+            duration-300
+            ease-in-out
+            transform 
+            hover:-translate-y-1
+            hover:scale-110"
+        >
+          <AiFillYoutube size="33px" />
+        </a>
       </div>
+      ;
     </div>
   );
 };
