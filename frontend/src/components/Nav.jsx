@@ -1,11 +1,8 @@
 import React from "react";
 import Logo from "../images/Logo.png";
 import { BsFacebook } from "react-icons/bs";
-import {
-  AiFillTwitterCircle,
-  AiFillGoogleCircle,
-  AiFillYoutube,
-} from "react-icons/ai";
+import SocialButton from "./SocialButton";
+
 const Nav = () => {
   return (
     <div
@@ -40,64 +37,9 @@ const Nav = () => {
           <li className="text-[18px] mx-5 font-Mont">Hit</li>
         </ul>
       </div>
-      <div
-        className="
-            flex
-            justify-center
-            items-center
-            text-center
-
-
-  
-        "
-      >
-        <a
-          href=""
-          className="
-            text-white
-            hover:text-primary            
-            transition 
-            duration-300
-            ease-in-out
-            transform 
-            hover:-translate-y-1
-            hover:scale-110 "
-        >
-          <AiFillTwitterCircle size="33px" />
-        </a>
-
-        <a
-          href=""
-          className="             
-            text-white
-            mx-4
-            hover:text-primary            
-            transition 
-            duration-300
-            ease-in-out
-            transform 
-            hover:-translate-y-1
-            hover:scale-110"
-        >
-          <AiFillGoogleCircle size="33px" />
-        </a>
-        <a
-          href=""
-          className="            
-            text-white
-
-            hover:text-primary            
-            transition 
-            duration-300
-            ease-in-out
-            transform 
-            hover:-translate-y-1
-            hover:scale-110"
-        >
-          <AiFillYoutube size="33px" />
-        </a>
+      <div>
+        <SocialButton />
       </div>
-      ;
     </div>
   );
 };
